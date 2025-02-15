@@ -29,7 +29,7 @@ export default function Share() {
   ];
 
   const handleShare = (name) => {
-    const url = "https://jeiya.my.id";
+    const url = "https://sakura-vtuber-bio.vercel.app/";
     if (name === "copy") {
       navigator.clipboard
         .writeText(url)
@@ -89,6 +89,7 @@ export default function Share() {
                 height={512}
                 alt={icon.alt}
               />
+              <p>{icon.text}</p>
             </div>
           ))}
         </div>

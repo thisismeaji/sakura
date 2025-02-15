@@ -57,39 +57,45 @@
 }
 
 .shareIcon div{
-    background-color: black;
-    padding: 0.8rem;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     border-radius: 100%;
     cursor: pointer;
     transition: all 0.3s ease-out;
+    gap: 0.5rem;
 }
 
 .shareIcon div:hover{
     transform: scale(1.05);
 }
 
-.shareIcon > div:nth-of-type(1){
+.shareIcon > div:nth-of-type(1) img{
     background-color: var(--grey);
 }
 
-.shareIcon > div:nth-of-type(2){
+.shareIcon > div:nth-of-type(2) img{
     background-color: #1877F2;
 }
 
-.shareIcon > div:nth-of-type(3){
+.shareIcon > div:nth-of-type(3) img{
     background-color: #000000;
 }
 
-.shareIcon > div:nth-of-type(4){
+.shareIcon > div:nth-of-type(4) img{
     background-color: #25D366;
 }
 
 .shareIcon img{
-    max-width: 25px;
-    max-height: 25px;
+    max-width: 50px;
+    max-height: 50px;
+    padding: 0.8rem;
+    border-radius: 100%;
+}
+
+.shareIcon p{
+    font-size: 0.8em;
 }
 
 .copyNotification {
@@ -132,11 +138,16 @@
     }
 
     .shareIcon img{
-        max-width: 20px;
-        max-height: 20px;
+        max-width: 40px;
+        max-height: 40px;
+        padding: 0.6rem;
+        border-radius: 100%;
     }
 
-    .shareIcon div{
-        padding: 0.7rem;
+    .shareIcon p{
+        font-size: 0.7em;
     }
+    
+
+    
 }
