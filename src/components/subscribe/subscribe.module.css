@@ -1,0 +1,116 @@
+.subscribe{
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: var(--background);
+   max-width: 500px;
+   padding: 4rem 2rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   font-family: "Poppins";
+   border-radius: 5px;
+   gap: 1.5rem;
+}
+
+.subscribe h1{
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.subscribe p{
+    font-weight: 400;
+}
+
+.subscribe img{
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 100%;
+    border: 2px solid var(--background);
+}
+
+.cardForm{
+    width: 100%;
+}
+
+.cardForm form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.cardForm input{
+    padding: 0.6rem 1rem;
+    font-family: "Poppins";
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    background-color:var(--grey);
+}
+
+.cardForm button{
+    padding: 0.7rem 1rem;
+    font-family: "Poppins";
+    background-color: var(--foreground);
+    color: var(--background);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.closeBtn{
+    font-size: 2.5em;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Background semi transparan */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+
+@media screen and (max-width:786px){
+    .subscribe{
+        width: 95%;
+        padding: 4rem 1.5rem;
+        gap: 1rem;
+    }
+
+    .subscribe h1{
+        font-size: 1em;
+    }
+
+    .closeBtn{
+        right: 1.5rem;
+    }
+
+    .subscribe input, .subscribe button{
+        font-size: 0.8em;
+        padding: 1rem;
+    }
+
+    .cardForm{
+        gap: 0.5rem;
+    }
+  }
+  

@@ -1,0 +1,142 @@
+.share{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--background);
+    width: 100%;
+    max-width: 500px;
+    font-family: "Poppins";
+    padding: 1.5rem 1.5rem 4rem 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 5px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); /* Efek gelap di belakang */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+.close {
+    font-size: 2.5em;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.shareImg > img{
+    height: 100%;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 5px;
+}
+
+.shareIcon{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.shareIcon div{
+    background-color: black;
+    padding: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.shareIcon div:hover{
+    transform: scale(1.05);
+}
+
+.shareIcon > div:nth-of-type(1){
+    background-color: var(--grey);
+}
+
+.shareIcon > div:nth-of-type(2){
+    background-color: #1877F2;
+}
+
+.shareIcon > div:nth-of-type(3){
+    background-color: #000000;
+}
+
+.shareIcon > div:nth-of-type(4){
+    background-color: #25D366;
+}
+
+.shareIcon img{
+    max-width: 25px;
+    max-height: 25px;
+}
+
+.copyNotification {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0;
+    animation: fadeInOut 2s forwards;
+  }
+  
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, -10px);
+    }
+    10% {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+    90% {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-50%, -10px);
+    }
+  }
+  
+
+@media screen and (max-width:786px){
+    .share{
+        width: 95%;
+    }
+
+    .shareIcon img{
+        max-width: 20px;
+        max-height: 20px;
+    }
+
+    .shareIcon div{
+        padding: 0.7rem;
+    }
+}
