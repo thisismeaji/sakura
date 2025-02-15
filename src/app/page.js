@@ -16,6 +16,7 @@ export default function Home() {
   const { showShare } = useShare(); // Ambil showShare dari context
 
   return (
+    <>
     <section className={Styles.section}>
       <Background />
       <div className={Styles.card}>
@@ -26,5 +27,6 @@ export default function Home() {
         {showShare && <Share />} {/* Render Share jika true */}
       </div>
     </section>
+    </>
   );
 }
